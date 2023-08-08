@@ -1,0 +1,36 @@
+
+/* Add these styles to your existing CSS */
+.flipping-box {
+    perspective: 1000px; /* Set the 3D perspective for the flipping effect */
+    display: inline-block;
+    position: absolute;
+  }
+  
+  .front,
+  .back {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1ms; /* Apply a smooth transition effect on transform property */
+  }
+  
+  .front {
+    transform: rotateY(0deg); /* Front side starts at 0-degree rotation */
+  }
+  
+  .back {
+    transform: rotateY(180deg); /* Back side starts at 180-degree rotation */
+    visibility: hidden; /* Initially, hide the back image */
+  }
+  
+  /* Show the back image on hover */
+  .flipping-box:hover .front {
+    visibility: hidden;
+  }
+  
+  .flipping-box:hover .back {
+    visibility: visible;
+  }
+  
