@@ -1,6 +1,16 @@
 
 /* Add these styles to your existing CSS */
+
 .flipping-box {
+  @media (max-width: 767px) {
+    .flipping-box {
+      width: 100%; /* Take full width on mobile */
+    }
+
+    .flipping-box {
+      text-align: center; /* Center the flipping box on mobile */
+    }
+  }
     perspective: 1000px; /* Set the 3D perspective for the flipping effect */
     display: inline-block;
     position: absolute;
@@ -33,4 +43,15 @@
   .flipping-box:hover .back {
     visibility: visible;
   }
-  
+  .custom-button{
+    position:relative;
+  bottom: 0;
+  left: 50%; /* Butonu resmin yatay ortasına hizalar */
+  transform: translateX(-50%); /* Yatayda merkezlemek için */
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
