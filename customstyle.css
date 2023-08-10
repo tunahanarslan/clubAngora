@@ -43,13 +43,15 @@
   .flipping-box:hover .back {
     visibility: visible;
   }
+
   .custom-button{
-    position:relative;
+    margin-top: 400px;
+    position: relative;
   bottom: 0;
-  left: 50%; /* Butonu resmin yatay ortasına hizalar */
+  left: 55%; /* Butonu resmin yatay ortasına hizalar */
   transform: translateX(-50%); /* Yatayda merkezlemek için */
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: var(--primary);
   color: white;
   border: none;
   border-radius: 5px;
